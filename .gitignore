@@ -3,6 +3,7 @@
 # compiled output
 /e2e
 /src
+/dist
 /tmp
 /out-tsc
 /npmdist
