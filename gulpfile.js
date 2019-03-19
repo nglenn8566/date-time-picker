@@ -111,7 +111,7 @@
     });
 
     gulp.task('bundle', function (cb) {
-        var cmd = '.bin/rollup -c rollup.config.js dist/picker.js > tmp/picker.bundle.js';
+        var cmd = 'node_modules/.bin/rollup -c rollup.config.js dist/picker.js > tmp/picker.bundle.js';
         return run_proc(cmd, cb);
     });
 
@@ -120,7 +120,7 @@
     });
 
     gulp.task('ngc', function (cb) {
-        let cmd = '.bin/ngc -p tsconfig-aot.json';
+        let cmd = 'node_modules/.bin/ngc -p tsconfig-aot.json';
         return run_proc(cmd, cb);
     });
 
